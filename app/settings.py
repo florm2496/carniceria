@@ -112,8 +112,6 @@ USE_TZ = True
 
 TIME_ZONE='America/Argentina/Buenos_Aires'
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__) )
-
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR ,'static'),)
