@@ -3,7 +3,7 @@ from decouple import config
 import dj_database_url
 import os
 
-BASE_DIR = Path(__file__).ancestor(2)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG=False
 
@@ -111,6 +111,8 @@ USE_L10N = True
 USE_TZ = True
 
 TIME_ZONE='America/Argentina/Buenos_Aires'
+
+
 
 
 STATIC_URL = '/static/'
